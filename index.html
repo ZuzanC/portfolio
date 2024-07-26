@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My portfolio</title>
+    <meta name="description" content="My portfolio">
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body class="text-gray-700">
+    <!-- preloader func -->
+    <div class="preloader loaded-success fixed inset-0 z-50 bg-purple-100">
+        <div class="absolute left-1/2 top-1/2 transform -translate-y-1/2">
+            <div class="relative mx-auto my-12">
+                <div class="inline-block">
+                    <svg class="animate-spin h-8 w-8 text-purple-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+	          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+	          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+	        </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="fixed top-0 left-0 right-0 z-40">
+        <nav class="main-nav">
+            <div class="container xl:max-w-6xl mx-auto px-4">
+                <div class="lg:flex lg:justify-between">
+                    <div class="flex justify-between items-end">
+                        <!-- mobile navbar -->
+                        <div class="flex flex-row items-center py-4 lg:py-0">
+                            <div class="relative text-gray-900 hover:text-black block lg:hidden">
+                                <button type="button" class="menu-mobile block py-3 px-6 border-b-2 border-transparent">
+	                  <span class="sr-only">Mobile menu</span>
+	                  <svg class="open h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+	                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+	                  </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="close bi bi-x-lg h-8 w-8" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                      <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                    </svg>
+	                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row">
+                        <ul class="navbar bg-white lg:bg-transparent w-full hidden text-center lg:text-left lg:flex lg:flex-row text-gray-900 text-sm items-center font-bold">
+                            <li class="relative hover:text-black">
+                                <a class="active block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#home">Home</a>
+                            </li>
+                            <li class="relative hover:text-black">
+                                <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#about">About me</a>
+                            </li>
+                            <li class="relative hover:text-black">
+                                <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#history">Experience</a>
+                            </li>
+                            <li class="relative hover:text-black">
+                                <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#portfolio">My work</a>
+                            </li>
+                            <li class="relative hover:text-black">
+                                <a class="block py-3 lg:py-7 px-6 border-b-2 border-transparent" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="content">
+        <div id="home" class="section relative z-0 py-16 md:pt-32 md:pb-20 bg-sky-100">
+            <div class="container xl:max-w-6xl mx-auto px-4">
+                <div class="flex flex-wrap flex-row -mx-4 justify-center">
+                    <div class="flex-shrink max-w-full px-4 sm:px-12 lg:px-18 w-full sm:w-9/12 lg:w-1/2 self-center">
+                        <img src="src/img/portfolio.png" class="w-full max-w-full h-auto" alt="main-image">
+                    </div>
+                    <div class="flex-shrink max-w-full px-4 w-full md:w-9/12 lg:w-1/2 self-center lg:pr-12">
+                        <div class="text-center lg:text-left mt-6 lg:mt-0">
+                            <div class="mb-12">
+                                <h1 class="text-4xl leading-normal text-black font-bold mb-4">Hi I am Zuzana<br>I do <span data-toggle="typed" data-options='{"strings": ["Web development", "Web Design", "UX/UI", "Digital design"]}'></span></h1>
+                                <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Creating user-centered solutions for your business.</p>
+                            </div>
+                            <div class="flex flex-col lg:flex-row ">
+                                <a class="flex items-center justify-center mb-4 w-full lg:max-w-fit lg:mb-0 py-2.5 px-10 leading-normal text-indigo-500 shadow-lg shadow-indigo-300/50 bg-white rounded-md hover:bg-blue-50 hover:ring-0 focus:outline-none focus:ring-0 mr-4" href="https://www.linkedin.com/in/zuzana-c-3958121b4/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mr-1" width="1.5rem" height="1.5rem" fill="currentColor" viewBox="0 0 24 24">
+										<path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+									</svg>
+                                    <span>My profile</span>
+                                </a>
+
+                                <a class="flex items-center justify-center py-2.5 px-10 w-full lg:max-w-fit incline-block leading-normal text-white bg-indigo-500 shadow-lg shadow-indigo-500/50 rounded-md hover:text-white hover:bg-indigo-600 hover:ring-0 focus:outline-none focus:ring-0"
+                                    href="src/ZuzanaCV.pdf" target="_blank" download="ZuzanaChomovaResume">
+                                    <svg width="1.5rem" height="1.5rem" class="inline-block mr-1" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/>
+									</svg>
+                                    <span>Download resume</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="section relative mt-3 bg-white">
+            <div class="container xl:max-w-6xl mx-auto pt-20 pb-8 md:pt-18 mt-3 md:pb-4">
+                <header class="text-center mx-auto mb-12 lg:px-20">
+                    <h2 class="text-2xl leading-normal mb-2 font-bold text-black">What I Do</h2>
+                    <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Some of the skills I acquired along the way and my passions.</p>
+                </header>
+
+                <div class="flex flex-wrap flex-row -mx-4 text-center">
+                    <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s">
+                        <div class="py-8 px-12 mb-12 bg-sky-50 border-b border-purple-100 rounded-lg transform transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-500">Web development</h3>
+                            <p class="text-indigo-900">I write clean code to create responsive and user-friendly web solutions using my skills with different JavaScript-based frontend frameworks.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                        <div class="py-8 px-12 mb-12 bg-sky-50 border-b border-purple-100 rounded-lg transform transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-500">UI/UX</h3>
+                            <p class="text-indigo-900">I create user centered designs for web and apps with Figma while utilizing user research, ideation, wireframing, prototyping, and usability testing.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                        <div class="py-8 px-12 mb-12 bg-sky-50 border-b border-purple-100 rounded-lg transform transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-500">Digital design</h3>
+                            <p class="text-indigo-900">I use digital art pixel based software Procreate to create art and graphic design elements. I also create digital products using Canva. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="history" class="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white flex justify-center">
+            <div class="container">
+                <header class="text-center mx-auto mb-12 lg:px-20  xl:max-w-6xl mx-auto px-4">
+                    <h2 class="text-2xl leading-normal mb-2 font-bold text-black">My experience</h2>
+                    <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Here is a short history of my experience presented in cute bubbles</p>
+                </header>
+
+                <div class="container">
+                    <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
+                        <div class="flex flex-row-reverse md:contents">
+                            <div class="bg-indigo-400 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md wow fadeInUp" data-wow-duration="1s" ">
+                                <h3 class="font-semibold text-lg mb-1 ">CoolShop (8/2019 - 11/2019)</h3>
+                                <p class="leading-tight text-justify ">
+                                    Frontend development Intern<br/> JavaScrip, Vue.js, REST APIs,HTML and SASS
+                                </p>
+                            </div>
+                            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10 ">
+                                <div class="h-full w-6 flex items-center justify-center ">
+                                    <div class="h-full w-1 bg-sky-100 pointer-events-none "></div>
+                                </div>
+                                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-indigo-400 shadow "></div>
+                            </div>
+                        </div>
+                        <div class="flex md:contents ">
+                            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative ">
+                                <div class="h-full w-6 flex items-center justify-center ">
+                                    <div class="h-full w-1 bg-sky-100 pointer-events-none "></div>
+                                </div>
+                                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-indigo-400 shadow "></div>
+                            </div>
+                            <div class="bg-indigo-400 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md wow fadeInUp " data-wow-duration="1s "">
+                                <h3 class="font-semibold text-lg mb-1 ">PublicWorks Aps (11/2020 - 2/2021)</h3>
+                                <p class="leading-tight text-justify ">
+                                    Web developer & designer (student) <br/>Vue.js, JavaScript, Rest APIs,HTML,Tailwind and Figma
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row-reverse md:contents ">
+                            <div class="bg-indigo-400 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md wow fadeInUp" data-wow-duration="1s" ">
+                                <h3 class="font-semibold text-lg mb-1 ">Meeshop (5/2021 - 6/2021)</h3>
+                                <p class="leading-tight text-justify ">
+                                    Part-time frontend developer & designer<br/>Working with frontend development and creating client's designs.<br/> Vue.js, JavaScript, Nuxt.js, Rest APIs HTML, CSS, Tailwind & Figma
+                                </p>
+                            </div>
+                            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10 ">
+                                <div class="h-full w-6 flex items-center justify-center ">
+                                    <div class="h-full w-1 bg-sky-100 pointer-events-none "></div>
+                                </div>
+                                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-indigo-400 shadow "></div>
+                            </div>
+                        </div>
+                        <div class="flex md:contents ">
+                            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative ">
+                                <div class="h-full w-6 flex items-center justify-center ">
+                                    <div class="h-full w-1 bg-sky-100 pointer-events-none "></div>
+                                </div>
+                                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-indigo-400 shadow "></div>
+                            </div>
+                            <div class="bg-indigo-400 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md wow fadeInUp " data-wow-duration="1s "">
+                                <h3 class="font-semibold text-lg mb-1 ">Magasin du Nord (8/2023 - 5/2024)</h3>
+                                <p class="leading-tight text-justify ">
+                                    Frontend developer <br/> Working with frontend development, bug fixes and design/feature implementations.<br/> Salesforce,React templates, Web components JavaScript,<br/> Html, Scss, Storybook, Figma
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio" class="section relative z-0 py-12 md:py-16 bg-white ">
+            <div class="container xl:max-w-6xl mx-auto px-4 ">
+                <header class="text-center mx-auto mb-12 lg:px-20 ">
+                    <h2 class="text-2xl leading-normal mb-2 font-bold text-black ">My work</h2>
+                    <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2 ">Below are some examples of my UI and UX projects.</p>
+                </header>
+            </div>
+
+            <div class="flex flex-wrap flex-row ">
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/search.png " data-gallery="gallery1 " data-glightbox="description: .custom-desc1" class="glightbox3 grayscale-50 hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/search.png " alt="Web design ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Search page</h3>
+                                <small class="d-block ">Web design</small>
+                            </div>
+                        </a>
+                        <div class="glightbox-desc custom-desc1">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Search page</h3>
+                            <p class="text-white">I designed an engaging homepage for a travel website using Figma, enabling users to effortlessly search for trips to specific destinations and find accommodations. With a sleek and intuitive interface, it makes travel planning
+                                seamless and enjoyable. This project showcases my ability to create user-friendly and visually appealing digital experiences. </p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s " data-wow-delay=".5s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/FoodAR.png " data-gallery="gallery1 " data-glightbox="description: .custom-desc2" class="glightbox3 grayscale-50 hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/FoodAR.png " alt="UX/UI project ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Food ordering AR app</h3>
+                                <small class="d-block ">Ux & app design</small>
+                            </div>
+                        </a>
+                        <div class="glightbox-desc custom-desc2 ">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Website evaluation</h3>
+                            <p class="text-white">This is a UX/UI project based around creating augmented reality food ordering app using human-centered design principles.<br/>Read more about the project <a target="_blank" href="https://www.behance.net/gallery/132760927/AR-food-ordering-application "
+                                    class="underline">HERE</a></p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s " data-wow-delay=".1s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/Signup.png " data-gallery="gallery1 " data-glightbox="description: .custom-desc3 " class="glightbox3 grayscale-50 hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/Signup.png " alt="Web design ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Signup page</h3>
+                                <small class="d-block ">Web design</small>
+                            </div>
+                        </a>
+                        <div class="glightbox-desc custom-desc3">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Sign up popup</h3>
+                            <p class="text-white">I crafted an eye-catching sign-up popup for an online course website using Figma, ensuring a smooth and inviting user experience. This design encourages new users to join with a visually appealing and straightforward interface.</p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s " data-wow-delay=".1s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/leaderboard.png " data-gallery="gallery1 " data-glightbox="description: .custom-desc4" class="glightbox3 grayscale-50 hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/leaderboard.png " alt="App design ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Leaderboard</h3>
+                                <small class="d-block ">App design</small>
+                            </div>
+                        </a>
+                        <div class="glightbox-desc custom-desc4 ">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Leaderboard</h3>
+                            <p class="text-white">I developed a dynamic leaderboard page for a mobile game using Figma, delivering a visually striking experience for users. The design effectively showcases top players, fostering competition and engagement.</p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s " data-wow-delay=".1s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/SearchEval.png " data-gallery="gallery1 " data-glightbox="description:.custom-desc5" class="glightbox3 grayscale-50 hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/SearchEval.png " alt="UX project ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Website evaluation</h3>
+                                <small class="d-block ">UX</small>
+                            </div>
+                        </a>
+                        <div class="glightbox-desc custom-desc5">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Website evaluation</h3>
+                            <p class="text-white">This is a project focused around UX evaluation of an Aalborg university search engine.<br/>Read more about the project <a target="_blank" href="https://www.behance.net/gallery/132737859/Search-website-evaluation " class="underline">HERE</a></p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s " data-wow-delay=".3s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/BoardingPass.png " data-gallery="gallery1 " data-glightbox="description: .custom-desc6" class="glightbox3 grayscale-50 hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/BoardingPass.png " alt="App design ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Boarding pass</h3>
+                                <small class="d-block ">App design</small>
+                            </div>
+                        </a>
+                        <div class="glightbox-desc custom-desc6">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Boarding pass</h3>
+                            <p class="text-white">This is a design of a boarding pass for a phone application. </p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s " data-wow-delay=".7s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/Landing page.png " data-gallery="gallery1 " data-glightbox="description: .custom-desc7" class="glightbox3
+                                grayscale-50 hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/Landing page.png " alt=" ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Web Development</h3>
+                                <small class="d-block ">Web design</small>
+                            </div>
+                        </a>
+                        <div class="glightbox-desc custom-desc7">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Landing page</h3>
+                            <p class="text-white">Above is a design of an impactful landing page for an online graphic design course in Figma, featuring an enticing sign-up button and compelling testimonials. The layout effectively captures visitors' attention and builds trust
+                                through social proof.</p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/payment.png " data-gallery="gallery1 " data-glightbox="description:.custom-desc8" class="glightbox3 grayscale-50
+                                hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/payment.png " alt="Web design ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Checkout page</h3>
+                                <small class="d-block ">Web design</small>
+                            </div>
+                        </a>
+                        <div class="glightbox-desc custom-desc8">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Checkout page</h3>
+                            <p class="text-white">
+                                I designed a sleek and efficient payment checkout page for an online fashion store using Figma, ensuring a seamless and secure shopping experience. The layout guides users effortlessly through the payment process with familiar design and a stylish aesthetic.</p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s " data-wow-delay=".1s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/PRODUCT PAGE.png " data-gallery="gallery1 " data-glightbox="description:.custom-desc9" class="glightbox3 grayscale-50 hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/PRODUCT PAGE.png " alt="Web design ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Product page</h3>
+                                <small class="d-block ">Web design</small>
+                            </div>
+                        </a>
+
+                        <div class="glightbox-desc custom-desc9">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Landing page</h3>
+                            <p class="text-white">I designed a captivating product landing page for an online jewelry store using Figma, blending elegance with user-friendly navigation. The page highlights stunning pieces and encourages purchases through compelling visuals
+                                and strategic calls-to-action while incorporating reviews and wishlit features.</p>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group wow fadeInUp " data-wow-duration="1s " data-wow-delay=".3s ">
+                    <div class="relative overflow-hidden cursor-pointer mb-6 ">
+                        <a href="src/img/Projects/Slides-new.png " data-gallery="gallery1 " data-glightbox="description: .custom-desc10 " class="glightbox3 grayscale-50
+                                hover:grayscale-0 ">
+                            <img class="block w-full h-auto transform duration-500 hover:scale-125 " src="src/img/Projects/Slides-new.png " alt="App design ">
+                            <div class="absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 group-hover:opacity-100 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center ">
+                                <h3 class="text-base leading-normal font-semibold my-1 text-white ">Welcome screen</h3>
+                                <small class="d-block ">App design</small>
+                            </div>
+                        </a>
+                        <div class="glightbox-desc custom-desc10">
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-indigo-300">Welcome screen</h3>
+                            <p class="text-white">I crafted engaging welcome screens for a period tracking app using Figma, providing users with clear and intuitive guidance on app functionality. These screens feature a visually appealing design that simplifies onboarding
+                                and enhances user experience.</p>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </div>
+
+        <div id="contact" class="section bg-sky-100 w-full p-12">
+            <div class="wow fadeInUp" data-wow-duration="1s " data-wow-delay=".5s ">
+                <header class="text-center mx-auto mb-4 lg:px-20 ">
+                    <h2 class="text-2xl leading-normal mb-2 font-bold text-gray-800 ">Contact</h2>
+                    <p class="text-gray-600 leading-relaxed font-light text-xl mx-auto pb-2 ">Have questions or simply wanna connect?</p>
+                </header>
+
+                <div class="text-center mb-6">
+                    <a href="mailto:zuzana.chom@gmail.com " class="py-2.5 px-10 inline-block text-center leading-normal text-white bg-indigo-500 shadow-lg shadow-indigo-500/50 rounded-md hover:text-white hover:bg-indigo-600 hover:ring-0 focus:outline-none
+                                focus:ring-0 ">
+                        <svg xmlns="http://www.w3.org/2000/svg " width="1.5rem " height="1.5rem " class="inline-block mr-1 " fill="currentColor " viewBox="0 0 512 512 "><rect x="48 " y="96 " width="416 " height="320 " rx="40 " ry="40 " style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px
+                                "/><polyline points="112 160 256 272 400 160 " style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px "/></svg>Message me
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <a href="# " class="back-top fixed p-4 rounded bg-gray-100 border border-gray-100 text-gray-500 right-4 bottom-4 hidden " aria-label="Scroll To Top ">
+        <svg width="1rem " height="1rem " viewBox="0 0 16 16 " fill="currentColor " xmlns="http://www.w3.org/2000/svg ">
+      <path fill-rule="evenodd " d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z " clip-rule="evenodd "></path>
+      <path fill-rule="evenodd " d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z " clip-rule="evenodd "></path>
+    </svg>
+    </a>
+
+    <script src="src/vendors/glightbox/dist/js/glightbox.min.js "></script>
+    <script src="src/vendors/@splidejs/splide/dist/js/splide.min.js "></script>
+    <script src="src/vendors/typed.js/lib/typed.min.js "></script>
+    <script src="src/vendors/wow.js/dist/wow.min.js "></script>
+    <script src="src/vendors/smooth-scroll/dist/smooth-scroll.polyfills.min.js "></script>
+    <script src="src/js/theme.js "></script>
+</body>
+
+</html>
